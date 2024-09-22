@@ -1,0 +1,32 @@
+-- Criação do banco de dados
+CREATE DATABASE noticias_db;
+
+-- Selecionar o banco de dados
+USE noticias_db;
+
+-- Tabela para autores
+CREATE TABLE autores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela para categorias
+CREATE TABLE categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    descricao TEXT
+);
+
+-- Tabela para artigos
+CREATE TABLE artigos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(200) NOT NULL,
+    conteudo TEXT NOT NULL,
+    data_publicacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    autor_id INT,
+    categoria_id INT,
+    FOREIGN KEY (autor_id) REFERENCES autores(id),
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id)
+);

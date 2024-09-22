@@ -1,0 +1,204 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "inter", sans-serif;
+-webkit-font-smoothing: antialiased;
+}
+
+
+
+body{
+    padding: 1.75rem 1rem;
+    background-color: #fdfdfd;
+}
+
+.escurecer::before{
+content: "";
+position:fixed;
+height: 100vh;
+width: 100%;
+background-color: rgba(0, 0, 26, 0.481);
+top: 0;
+left: 0;
+}
+
+.header-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+   padding: 20px;
+background-color: #cec5c5;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 999;
+    border-radius: 0;
+}
+
+.header-mobile .botao{
+border: none;
+background: none;
+width: fit-content;
+}
+
+
+
+.header-mobile nav {
+    position: fixed;
+    background-color: #FFFAFA;
+    right: -16rem; 
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem; 
+    gap: 1.5rem;
+    transition: right 0.3s; 
+    
+}
+
+.abrir {
+    right: 0;
+}
+
+.header-mobile nav a{
+    text-decoration: none;
+    color: rgb(7, 2, 37);
+}
+
+.header-mobile nav .button2{
+    
+    
+    margin-bottom: 1rem 1rem;
+    margin-left: auto;
+    border: none;
+background: none;
+width: fit-content;
+}
+
+.primeira-secao{
+    margin-bottom: 4rem;
+   
+    padding: 20px;
+}
+.primeira-secao img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.primeira-secao h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.primeira-secao p{
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+}
+
+.button1 {padding: 0.75rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(237, 26, 68);
+    color: #FFFAFA;
+    letter-spacing: 0.275rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-size: 0.875;
+}
+
+.segunda-secao{
+    background-color: rgb(2, 7, 38);
+    margin-bottom: 4rem;
+    padding: 1.5rem 1.1rem;
+}
+
+.m-p-b{
+    border-bottom: mintcream 1px solid;
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem
+}
+
+
+.segunda-secao h2{
+    color: rgb(250, 183, 27);
+font-size: 2rem;
+line-height: 100%;
+margin-bottom: 2.2rem;
+}
+.segunda-secao h3{
+    color: blanchedalmond;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+.segunda-secao p{
+    color: silver;
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
+
+.terceira-secao > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+.terceira-secao img{
+    max-width: 6.25rem;
+    
+}
+.terceira-secao strong {
+color: silver;
+font-size: 2rem;
+line-height: 100%;
+}
+.terceira-secao h2{
+    font-size: 1.25rem;
+    color: rgb(11, 11, 73);
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-block: 0.6rem;
+}
+.terceira-secao p{
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+    color:black;
+}
+@media(min-width: 1110px){
+    header > .botao{
+        display: none;
+    }
+}
+
+.pé{
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    position: relative; /* Posicionamento relativo */
+    bottom: 0; /* Alinhamento na parte inferior */
+    width: 100%; /* Largura total */
+
+    font-size: 14px; /* Tamanho da fonte */
+    padding: 10px 0; /* Aumenta o espaço do footer */
+    margin-top: auto; /* Empurra o footer para o final */
+}
+
+.pé p {
+    margin: 0; /* Remove margem do parágrafo */
+    margin-top: auto;
+}
+.img1{
+width: 100px;
+height: 127px;
+object-fit: cover;
+}
